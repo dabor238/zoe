@@ -1,4 +1,5 @@
 .videoWrapper iframe {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -7,6 +8,7 @@
 }
 
 .videoWrapper {
+    margin-top: 40px;
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
@@ -14,7 +16,7 @@
 }
 .txtBorde{
     /*text-shadow:
-   -1px -1px 0 #fff,  
+   -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
      1px 1px 0 #fff;*/

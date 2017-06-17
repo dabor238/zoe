@@ -3878,7 +3878,7 @@ iframe {
 }
 
 .start-screen form {
-    background-color: #252a2d;
+    background-color: rgba(238, 238, 238, 0.72);
     padding: 30px 30px 0;
     margin-top: 40px;
     z-index: 3
@@ -3890,9 +3890,10 @@ iframe {
     color: #d0d0d0
 }
 
+
 .start-screen form .input-wrp input::-webkit-input-placeholder,
 .start-screen form .input-wrp textarea::-webkit-input-placeholder {
-    color: #d0d0d0
+    color: #847a7a
 }
 
 .start-screen form .input-wrp input:-moz-placeholder,
@@ -3931,11 +3932,11 @@ iframe {
 .start-screen form .text {
     margin-bottom: 20px;
     font-size: 1.4rem;
-    color: #9d9d9d
+    color: #847a7a
 }
 
 .start-screen form .heading {
-    color: #fff
+    color: #007ba6
 }
 
 .start-screen form .note {
@@ -3993,7 +3994,7 @@ iframe {
         font-size: 5rem
     }
     .start-screen form {
-        margin-top: 0
+        margin-top: 40px;
     }
 }
 
@@ -4476,7 +4477,7 @@ iframe {
 
 #footer .footer__form .input-wrp input::-webkit-input-placeholder,
 #footer .footer__form .input-wrp textarea::-webkit-input-placeholder {
-    color: #c5def7
+    color: #0000
 }
 
 #footer .footer__form .input-wrp input:-moz-placeholder,
@@ -4937,6 +4938,7 @@ main form button[type=submit] {
 .list-with-icon--style-3 {
     text-align: left
 }
+
 
 .list-with-icon--style-3 .list__item {
     padding-left: 70px
