@@ -9,19 +9,20 @@ $(document).ready(function () {
         $('#formulario').trigger("reset");
     });
     $('#btnEnviar').click(function () {
+        $('#btnEnviar').text('Enviando...');
         var nombre = $('#txtNombre').val();
         var mail = $('#txtMail').val();
         var telefono = $('#txtTelefono').val();
         var texto = $('#txt').val();
 
         if (nombre != "" && (mail != "" | telefono != "")) {
-            $('#btnEnviar').text('Enviando...');
+            
             var usuarioRequest = {
                 Nombre: nombre,
                 Email: mail,
                 Telefono: telefono,
                 TextArea: texto,
-                IdPrograma: 2
+                IdPrograma: 3
             }
             $.ajax({
                 type: 'POST',
@@ -38,9 +39,11 @@ $(document).ready(function () {
                 },
                 error: function (xhr) {
                     alert('Problemas al ingresar los datos. Intente nuevamente.');
+                    $('#btnEnviar').text('Enviar');
                 }
             });
         } else {
+            $('#btnEnviar').text('Enviar');
             alert('Por favor llene todos los campos');
         }
 

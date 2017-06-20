@@ -3887,8 +3887,9 @@ iframe {
 .start-screen form .input-wrp input,
 .start-screen form .input-wrp textarea {
     border-bottom-color: #616161;
-    color: #d0d0d0
+    color: #000
 }
+
 
 
 .start-screen form .input-wrp input::-webkit-input-placeholder,
