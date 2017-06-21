@@ -4202,7 +4202,7 @@ iframe {
         height: 80px;
         padding-top: 25px;
         padding-bottom: 25px;
-        background-color: #dddddd
+        background-color: #f3f6fa
     }
     #top-bar__navigation-toggler {
         display: none
@@ -4261,7 +4261,7 @@ iframe {
         height: 80px;
         padding-top: 25px;
         padding-bottom: 25px;
-        background-color: #252a2d;
+        background-color: #ffffff;
         overflow: hidden
     }
     #top-bar.expanded,
