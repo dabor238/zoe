@@ -127,7 +127,7 @@
 															   <!--<p class="note">*Nota: Bundle ends in two weeks from now.</p>-->
 
 															   <div class="btn btn-wrp">
-																   <button class="" type="submit" role="button" id="btnEnviar">Enviar</button>
+																   <button class="" onclick="goog_report_conversion ('http://quimicaperfecta.com')" href="http://quimicaperfecta.com" type="submit" role="button" id="btnEnviar">Enviar</button>
 															   </div>
 														   </form>
 														   <form id="gracias">
@@ -603,5 +603,38 @@
 						   </div>
 
 						   <script type="text/javascript" src="js/main.min.js"></script>
+			<!-- Google Code for Quimica-Perfecta-Convertidos Conversion Page
+	In your html page, add the snippet and call
+	goog_report_conversion when someone clicks on the
+	chosen link or button. -->
+			<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+	var w = window;
+	w.google_conversion_id = 866867640;
+	w.google_conversion_label = "XHoaCOHXsHIQuLOtnQM";
+	w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+	goog_snippet_vars();
+	window.google_conversion_format = "3";
+	var opt = new Object();
+	opt.onload_callback = function() {
+	if (typeof(url) != 'undefined') {
+	  window.location = url;
+	}
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+	conv_handler(opt);
+  }
+}
+/* ]]> */
+			</script>
+			<script type="text/javascript"
+					src="//www.googleadservices.com/pagead/conversion_async.js">
+			</script>
+
 					   </body>
 </html>
