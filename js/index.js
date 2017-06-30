@@ -13,7 +13,7 @@ $(document).ready(function () {
         var nombre = $('#txtNombre').val();
         var mail = $('#txtMail').val();
         var telefono = $('#txtTelefono').val();
-        var texto = $('#txt').val();
+        var texto = "Edad: " + $('#txtEdad').val() + "/ Ciudad: " +$('#txtCiudad').val();
 
         if (nombre != "" && (mail != "" | telefono != "")) {
             

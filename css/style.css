@@ -3880,7 +3880,7 @@ iframe {
 .start-screen form {
     background-color: rgba(238, 238, 238, 0.72);
     padding: 30px 30px 0;
-    margin-top: 40px;
+    /*margin-top: 40px; cambio estilo*/
     z-index: 3
 }
 
@@ -3995,7 +3995,7 @@ iframe {
         font-size: 5rem
     }
     .start-screen form {
-        margin-top: 40px;
+        /*margin-top: 40px; cambio*/
     }
 }
 
