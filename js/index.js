@@ -9,7 +9,6 @@ $(document).ready(function () {
         $('#formulario').trigger("reset");
     });
     $('#btnEnviar').click(function () {
-        $('#btnEnviar').text('Enviando...');
         var nombre = $('#txtNombre').val();
         var mail = $('#txtMail').val();
         var telefono = $('#txtTelefono').val();
@@ -17,7 +16,6 @@ $(document).ready(function () {
         var edad = $('#txtEdad').val();
         if(edad >= 23){
             if (nombre != "" && (mail != "" | telefono != "")) {
-            
                 var usuarioRequest = {
                     Nombre: nombre,
                     Email: mail,
@@ -36,21 +34,16 @@ $(document).ready(function () {
                     success: function (data) {
                         $('#formulario').hide();
                         $('#gracias').show('slow');
-                        $('#btnEnviar').text('Enviar');
                     },
                     error: function (xhr) {
                         alert('Problemas al ingresar los datos. Intente nuevamente.');
-                        $('#btnEnviar').text('Enviar');
                     }
                 });
             } else {
-                $('#btnEnviar').text('Enviar');
                 alert('Por favor llene todos los campos');
             }
         } else {
             alert('Este servicio es unicamente para personas mayores de 25 a\u00f1os.');
-            $('#btnEnviar').text('Enviar');
         }
     });
-
 });
