@@ -34,6 +34,15 @@ $(document).ready(function () {
                     success: function (data) {
                         $('#formulario').hide();
                         $('#gracias').show('slow');
+
+                        window.google_trackConversion({
+                            google_conversion_id: 866867640,
+                            google_custom_params: {
+                                parameter1: 'Quimica',
+                                parameter2: 1.50
+                            },
+                            google_remarketing_only: true
+                        });
                     },
                     error: function (xhr) {
                         alert('Problemas al ingresar los datos. Intente nuevamente.');

@@ -47,6 +47,10 @@
 		  ga('send', 'pageview');
 		</script>
 
+        <!--code for convertion tracking-->
+        <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+        <!--end code-->
+
 	</head>
 					   <body class="home" data-spy="scroll" data-target="#top-bar" data-offset="81">
 						   <div id="top-bar">
@@ -123,8 +127,8 @@
 															 </label>
 															   <!--<p class="note">*Nota: Bundle ends in two weeks from now.</p>-->
 															   <div class="btn btn-wrp">
-                                                                   <!--<button class="" type="submit" id="btnEnviar">Enviar</button>-->
-																   <button class="" onclick="goog_report_conversion ('http://quimicaperfecta.com')" href="http://quimicaperfecta.com" type="submit" id="btnEnviar">Enviar</button>
+                                                                   <button class="" type="submit" id="btnEnviar">Enviar</button>
+																   <!--<button class="" onclick="goog_report_conversion ('http://quimicaperfecta.com')" href="http://quimicaperfecta.com" type="submit" id="btnEnviar">Enviar</button>-->
 															   </div>
 														   </form>
 														   <form id="gracias">
@@ -597,15 +601,15 @@
 	In your html page, add the snippet and call
 	goog_report_conversion when someone clicks on the
 	chosen link or button. -->
-			<script type="text/javascript">
-  /* <![CDATA[ */
+<!--<script type="text/javascript">
+  
   goog_snippet_vars = function() {
 	var w = window;
 	w.google_conversion_id = 866867640;
 	w.google_conversion_label = "XHoaCOHXsHIQuLOtnQM";
 	w.google_remarketing_only = false;
   }
-  // DO NOT CHANGE THE CODE BELOW.
+  
   goog_report_conversion = function(url) {
 	goog_snippet_vars();
 	window.google_conversion_format = "3";
@@ -620,10 +624,10 @@
 	conv_handler(opt);
   }
 }
-/* ]]> */
+
 			</script>
 			<script type="text/javascript"
 					src="//www.googleadservices.com/pagead/conversion_async.js">
-			</script>
+			</script>-->
 		</body>
 </html>
